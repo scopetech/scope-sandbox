@@ -7,10 +7,11 @@ using System.Web.Http;
 using System.Net.Mail;
 using System.Text;
 using System.Configuration;
+using Scope.HookConsumer.Extensions;
 
 namespace Scope.HookConsumer.Controllers
 {
-    public class HandlesController : ApiController
+    public class SendRequestAsMailController : ApiController
     {
 
         public string Get()
@@ -48,7 +49,10 @@ namespace Scope.HookConsumer.Controllers
                 }
             }
 
-            var mail = new MailMessage("test@scopetechnology.com", ConfigurationManager.AppSettings["Receiver"], "Call Summary " + DateTime.UtcNow.ToString(), result);
+            var mail = new MailMessage();
+            mail.Subject = "Call Summary " + DateTime.UtcNow.ToString();
+            mail.AddRecipients(ConfigurationManager.AppSettings["Receivers"]);
+            mail.Body = result;
 
             try
             {
