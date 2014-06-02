@@ -5,7 +5,6 @@ using System.Web;
 using System.Net.Mail;
 using System.Net.Http;
 using System.ServiceModel.Channels;
-using System.Web;
 
 namespace Scope.HookConsumer.Extensions
 {
