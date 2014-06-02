@@ -15,12 +15,13 @@ namespace Scope.HookConsumer.Controllers
     public class AppHarborOnBuildController : ApiController
     {
         private const string _bodyFormat = "Application: {0}\t{1}\r\nCommit: {2}\thttps://github.com/scopetech/MLog/commit/{3}\r\nBuild: {4}\t{5}\r\n";
+        private const string _subjectFormat = "{0} {1} {2}";
+        private const string _defaultStatus = "summary";
 
         public string Post()
         {
-
-            var dateStr = DateTime.UtcNow.ToString("yyyy.MM.dd HH.mm.ss"); 
-
+            var dateStr = DateTime.UtcNow.ToString("yyyy.MM.dd HH.mm.ss");
+            var status = _defaultStatus;
             var result = "Build occurred on AppHarbor.\r\n";
             
 
@@ -42,6 +43,8 @@ namespace Scope.HookConsumer.Controllers
                             buildInfo.build.url
                             );
 
+                        status = buildInfo.build.status;
+
                     }
                     catch(Exception ex)
                     {
@@ -57,7 +60,7 @@ namespace Scope.HookConsumer.Controllers
             result += "Triggered from: " + (Request.GetClientIpAddress() ?? "unknown");
 
             var mail = new MailMessage();
-            mail.Subject = "Build Summary " + DateTime.UtcNow.ToString();
+            mail.Subject = string.Format(_subjectFormat, "Build", status, dateStr);
             mail.AddRecipients(ConfigurationManager.AppSettings["Receivers"]);
             mail.Body = result;
 

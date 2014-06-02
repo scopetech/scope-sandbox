@@ -26,7 +26,7 @@ namespace Scope.HookConsumer.Controllers
         
         private string Process()
         {
-
+            var dateStr = DateTime.UtcNow.ToString("yyyy.MM.dd HH.mm.ss"); 
             string result = "Request at " + DateTime.UtcNow.ToString() + "\r\n";
 
             var queryValues = Request.RequestUri.ParseQueryString();
@@ -50,7 +50,7 @@ namespace Scope.HookConsumer.Controllers
             }
 
             var mail = new MailMessage();
-            mail.Subject = "Call Summary " + DateTime.UtcNow.ToString();
+            mail.Subject = "Call Summary " + dateStr;
             mail.AddRecipients(ConfigurationManager.AppSettings["Receivers"]);
             mail.Body = result;
 
