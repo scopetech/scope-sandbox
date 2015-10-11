@@ -14,7 +14,16 @@ Labels classify items by:
  4. Issue state
      1. **verified** - closed issue is verified by issue creator (issues that created by Scope developers, should be verified by Scope testers)
      2. **waiting** - developers asked testers for requirements, additional information or approval, testers must provide additional information
-     3. **low-context** is a label used to indicate that insufficient information was supplied for the developers to understand or diagnose the issue. Additional information is needed by the creator/author of the issue.
+     3. **low-context** is a label used to indicate that insufficient information was supplied for the developers to understand or diagnose the issue. Developer even can't formulate a question to issue creator. Additional information is needed by the creator/author of the issue.
      4. **rejected** - things which will not be done or cancelled
 
+
+PipeLines (Lists)
+===================
+
+ 1. New - All newly created issues automatically appear there. If you do not know how and when issue should be processed, just leave issue in new pipeline
+ 2. Backlog - everything that could be implemented to improve product, but not yet planned when.
+ 3. Waiting & Analysing - Item have to be implemented within active development stages but it is not analysed enough
+ 4. Short List - Item is analysed and detailed enough, developers should pick it within active development stages
+ 5. In Progress - Developer is implementing or refactoring item right now, all items in this list must have assigned person. Only one "In Progress" item must be assigned to each developer at a time, exceptions to this rule are acceptable but require reasonable motivation.
 
