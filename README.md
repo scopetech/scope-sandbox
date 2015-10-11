@@ -13,4 +13,6 @@ Labels classify items by:
  3. Issue state
      1. **verified** - closed issue is verified by issue creator (issues that created by Scope developers, should be verified by Scope testers)
      2. **waiting** - developers asked testers for requirements, additional information or approval, testers must provide additional information
-     3. **rejected** - things which will not be done or cancelled
+     3. **low-context** is a label used to indicate that insufficient information was supplied for the developers to understand or diagnose the issue. Additional information is needed by the creator/author of the issue.
+     4. **rejected** - things which will not be done or cancelled
+4. Relation to other issues, i.e. **duplicate** - issue with same/similar request or description already exists. Usually in comments add duplictae issue number.
