@@ -1,4 +1,6 @@
-scope-sandbox
+Labels
 =============
 
-Tests and Prooves of concepts
+Labels classify items by:
+
+ 1. Reason of creation of an issue: bug / feature / query / question / documentation  
