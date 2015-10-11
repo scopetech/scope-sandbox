@@ -3,7 +3,7 @@ Labels
 
 Labels classify items by:
 
- 1. Reason of creation of an issue: **bug** / **feature** / **query** / **question** / **documentation** 
+ 1. Reason of creation of an issue
      1. **bug** - issue creator found a bug in software and asks for code modications to fix it
      2. **feature** - issue creator asks for code modications to implemet functionality
      3. **query** - issue creator asks for some actions related to development or testing process but do not require code modifications
