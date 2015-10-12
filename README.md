@@ -19,8 +19,12 @@ Labels classify items by:
      4. **rejected** - things which will not be done or cancelled
  5. The rest of labels are customer companies or specific functionality part labels. These labels are informational and can be used for prioritization or for targeting issues to particular developer or developer group who dedicated to specicific label.  
 
+Active development stages
+==========================
 
-Pipelines (Lists)
+Active development stage is Milestone. Milestone has development start and planned development end date, between these dates Milestone is active. Multiple milestones can be active at the point of time, but team have to try to keep only one active milestone at the point of time. Features have to be included into milestone before implementation.   
+
+Pipelines 
 ===================
 
  1. **New** - All newly created issues automatically appear there. If you do not know how and when issue should be processed, just leave issue in **New** pipeline
@@ -33,6 +37,6 @@ Pipelines (Lists)
      2. Closed issue is reopened. Depending on development stage, issue labels, issue content and reopening reason, these issues is picked by developers to process or by Team Lead to analyse.
  7. **Closed** - Only closed issues are stored there. Closed means development complete. Tester can teste issues in **Closed** pipeline and mark them with **verified** label when issue is tested successfully. Closed issue can be reopened if not implemented.
  
- 
+
  
 
