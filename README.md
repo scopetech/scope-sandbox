@@ -17,7 +17,8 @@ Labels classify items by:
      2. **waiting** - developers asked testers for requirements, additional information or approval, testers must provide additional information
      3. **low-context** is a label used to indicate that insufficient information was supplied for the developers to understand or diagnose the issue. Developer even can't formulate a question to issue creator. Additional information is needed by the creator/author of the issue.
      4. **rejected** - things which will not be done or cancelled
- 5. The rest of labels are customer companies or specific functionality part labels. These labels are informational and can be used for prioritization or for targeting issues to particular developer or developer group who dedicated to specific  label.  
+ 6. By review result, i.e. implementation of issues marked with **refactor** requires refactoring, what exactly must be refactored, must be mentioned in issue comments.  
+ 7. The rest of labels are customer companies or specific functionality part labels. These labels are informational and can be used for prioritization or for targeting issues to particular developer or developer group who dedicated to specific  label.  
 
 Active development stages
 ==========================
