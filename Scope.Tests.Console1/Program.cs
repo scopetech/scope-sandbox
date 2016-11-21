@@ -11,6 +11,7 @@ namespace Scope.Tests.Console1
         static void Main(string[] args)
         {
             Console.WriteLine("Super Gusli");
+            Console.ReadLine();
         }
     }
 }
