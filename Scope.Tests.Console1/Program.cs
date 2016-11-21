@@ -10,6 +10,7 @@ namespace Scope.Tests.Console1
     {
         static void Main(string[] args)
         {
+            Console.ReadLine();
         }
     }
 }
