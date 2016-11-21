@@ -10,7 +10,7 @@ namespace Scope.Tests.Console1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Super Gusli");
+            Console.WriteLine("Super Gusli - Lacal");
             Console.ReadLine();
         }
     }
