@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/scopetech/scope-sandbox.png?label=ready&title=Ready)](https://waffle.io/scopetech/scope-sandbox)
 Labels
 =============
 
